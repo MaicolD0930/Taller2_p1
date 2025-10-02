@@ -3,7 +3,6 @@ document.addEventListener("input", e => {
         const div = e.target.closest(".detalle");
         const select = div.querySelector(".productoSelect");
 
-        // JSON con info del producto
         const productoInfo = {
             stock: parseInt(select.selectedOptions[0].dataset.stock || 0),
             cantidad: parseInt(e.target.value || 0)

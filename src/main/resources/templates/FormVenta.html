@@ -12,7 +12,6 @@
 
 <form th:action="@{/v/guardar}" method="post" class="card p-4 shadow-sm">
 
-    <!-- Selección de Cliente -->
     <div class="mb-3">
         <label for="usuarioId" class="form-label">Cliente</label>
         <select name="usuarioId" id="usuarioId" class="form-select" required>
@@ -23,11 +22,9 @@
         </select>
     </div>
 
-    <!-- Sección de Detalles de Productos -->
     <h4 class="mb-3">Productos</h4>
     <div id="detalles">
 
-        <!-- Primer detalle por defecto -->
         <div class="detalle row g-2 align-items-end mb-2">
             <div class="col-md-6">
                 <label class="form-label">Producto</label>

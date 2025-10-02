@@ -23,7 +23,7 @@ public class VentaServiceImpl implements VentaService {
     @Override
     @Transactional
     public Venta save(Venta venta) {
-        // Asignar fecha y hora automáticamente si no están
+
         if (venta.getFecha() == null) {
             venta.setFecha(LocalDate.now());
         }
@@ -31,7 +31,7 @@ public class VentaServiceImpl implements VentaService {
             venta.setHora(LocalTime.now());
         }
 
-        // Inicializar acumuladores en BigDecimal
+        // Inicializamos acumuladores en BigDecimal
         BigDecimal subtotalVenta = BigDecimal.ZERO;
         BigDecimal descuentoVenta = BigDecimal.ZERO;
         BigDecimal totalVenta = BigDecimal.ZERO;
