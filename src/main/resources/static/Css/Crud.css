@@ -1,0 +1,125 @@
+body{
+    background-color: grey;
+}
+.Contenerdor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid black;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    padding: 50px;
+}
+.Contenerdor2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid black;
+    border-radius: 20px;
+    background-color: rgb(94, 83, 83);  
+    padding: 50px;
+    margin: 50px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Listar{
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    border-radius: 20px;
+    background-color: white;
+    margin: 2%;
+    padding: 10px;
+}
+table{
+    border: solid black;
+    width: 100%;
+    font-size: 17px;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    background-color: white;
+}
+td, th{
+    border: solid black;
+    padding-left: 15px;
+}
+.Botones{
+    text-align: center;
+}
+.BtnNormal {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;	
+  color: #fff;
+  background-color: rgb(57, 57, 233);
+  border: 3px Solid transparent;
+  border-radius: 3px;
+  width: 250px;
+  margin: 10px;
+}
+
+.BtnNormal:hover{
+  background-color: rgb(206, 79, 79);
+}
+
+#Crea{
+    display: none   ;
+    justify-content: center;
+}
+input{
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 13px;
+    border: 3px Solid transparent;
+    border-radius: 3px;
+    width: 250px;
+    margin: 10px;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 13;
+}
+.crea{
+    text-decoration: none;     
+    text-align: center;       
+    line-height: 40px;        
+    color: #fff;
+    background-color: #0d6efd;
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.crea:hover {
+    color: black;
+    background-color: rgb(93, 138, 93);
+}
+.Btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.Im{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.Im img{
+    
+    width: 100px;
+    height: 100px;
+}

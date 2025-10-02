@@ -1,0 +1,26 @@
+        .alert-stock {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+
+        h2 {
+            margin-top: 100px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+        body {
+            background-color: grey;
+        }
+
+        .VolverVe {
+            text-align: center;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .VolverVe a, .VolverVe button {
+            width: 400px;
+            margin: 5px;
+        }

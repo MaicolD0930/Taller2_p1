@@ -1,0 +1,65 @@
+    <!DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Factura de Venta</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" th:href="@{/Css/Factura.css}">
+    </head>
+    <body>
+        <div class="Formulario">
+            <h2>FACTURA DE VENTA NRO: <span th:text="${venta.idVenta}"></span></h2>
+            <div class="Fecha">
+                <p>Fecha de compra: <span th:text="${venta.fecha}"></span></p>
+                <p>Hora: <span th:text="${#temporals.format(venta.hora, 'HH:mm')}"></span></p>
+
+            </div>
+            <div class="Cliente">
+                <p class="a">CLIENTE:</p>
+                <p class="a"><span th:text="${venta.usuario.id}"></span></p>
+                <p><span th:text="|${venta.usuario.nombre} ${venta.usuario.apellido}|"></span></p>
+            </div>
+
+            <h3>DETALLES DE COMPRA</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Descripción</th>
+                        <th>Cant</th>
+                        <th>Vlr Unit</th>
+                        <th>Subtotal</th>
+                        <th>Dcto.</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="detalle, iter : ${venta.detalles}">
+                        <td th:text="${iter.count}"></td>
+                        <td th:text="${detalle.producto.nombre}"></td>
+                        <td th:text="${detalle.cantidad}"></td>
+                        <td th:text="${detalle.producto.vlrUnitario}"></td>
+                        <td th:text="${detalle.subtotal}"></td>
+                        <td th:text="${detalle.descuento}"></td>
+                        <td th:text="${detalle.total}"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <table>
+                <tr>
+                    <td>SUBTOTAL</td>
+                    <td th:text="${venta.subtotal}"></td>
+                </tr>
+                <tr>
+                    <td>DESCUENTO</td>
+                    <td th:text="${venta.descuento}"></td>
+                </tr>
+                <tr>
+                    <td><b>TOTAL A PAGAR</b></td>
+                    <td th:text="${venta.total}"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    </html>

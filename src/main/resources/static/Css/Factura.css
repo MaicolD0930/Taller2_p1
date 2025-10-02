@@ -1,0 +1,57 @@
+            body{
+                background-color: grey;
+            }
+            
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+                text-align: center;
+            }
+            .Formulario {
+                margin: 100px;
+                padding: 20px;
+                border: 1px solid black;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+
+            h2 {
+                text-align: center;
+                padding-bottom: 20px;
+                border-bottom: 2px solid black;
+            }
+            h3 {
+                text-align: center;
+                padding-bottom: 20px;
+                border-bottom: 2px solid black;
+            }
+            .Fecha {
+                text-align: center;
+                padding-bottom: 10px;
+                border-bottom: 2px solid black;
+            }
+            .Fecha span {
+                font-weight: bold;
+            }
+            .Cliente {
+                display: flex;
+                padding-bottom: 10px;
+                border-bottom: 2px solid black;
+                padding-top: 10px;
+                text-align: center;
+            }
+            .Cliente p{
+                font-weight: bold;
+                width: 33%;
+            }
+            .a {
+                width: 33%;
+                border-right: 2px solid black;
+            }
+
+            table {
+                width: 100%;
+                margin-top: 20px;
+                border-radius: 2px solid black;
+            }

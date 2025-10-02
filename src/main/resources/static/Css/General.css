@@ -1,0 +1,25 @@
+        body{
+            background-color: grey;
+        }
+        
+        .menu {
+            text-align: center;
+            width: 100%;
+            border-bottom: black 2px solid;
+            margin-top: 50px;
+        }
+        h1 {
+           color: white;
+        }
+
+        .menu div {
+            padding-top: 20px;
+            display: flex;
+            margin-left: 37%;
+        }
+        .menu a {
+            margin-right: 15px;
+        }
+        th {
+            text-align: center;
+        }
